@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Page that shows you about learnin AI" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Forms with HTML</h1>
+      <nav>
+        <ol>
+          <li class="main-nav__item"><a href="#form-user">User's form</a></li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <section id="form-user">
+        <h2>User's data</h2>
+        <form>
+          <label for="user-name">
+            <span>What is your name?</span>
+            <input type="text" id="user-name" required autocomplete="name" />
+          </label>
+          <label for="user-start-learning">
+            <span>When did you start learning HTML and CSS?</span>
+            <input type="date" id="user-start-learning" required />
+          </label>
+          <label for="user-schedule">
+            <span>When does your schedule start?</span>
+            <input type="time" id="user-schedule" required />
+          </label>
+          <label for="user-free-week">
+            <span>When does your free week going to take place?</span>
+            <input type="week" id="user-free-week" required />
+          </label>
+          <label for="user-calendar">
+            <span>When are you going to go on holidays?</span>
+            <input
+              type="datetime-local"
+              id="user-calendar"
+              name="user-calendar"
+              required
+            />
+          </label>
+          <label for="languages-input">
+            <span>Select a programming language</span>
+            <input list="languages" id="languages-input" required />
+            <datalist id="languages">
+              <option value="C#">C#</option>
+              <option value="C++">C++</option>
+              <option value="C">C</option>
+              <option value="Ruby">Ruby</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="Java">Java</option>
+              <option value="Python">Python</option>
+            </datalist>
+          </label>
+          <input type="submit" value="Send data" />
+          <button type="submit">Send to an AI</button>
+        </form>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet reiciendis magnam corrupti nesciunt nemo vero, facilis dolorem quasi debitis accusantium nam architecto cupiditate sit earum. Aliquid perferendis expedita ut soluta.
+        Debitis doloremque vero aut blanditiis iste cumque deserunt optio provident suscipit dolor? Dolor repudiandae, dolores sed tempore eveniet, atque cum deserunt laudantium commodi aliquid vero optio odio, voluptatibus accusantium enim!
+        Labore cum ipsa, impedit excepturi tempore repudiandae blanditiis quae est laboriosam quia magnam reiciendis, dicta esse nostrum consequatur quasi soluta. Quasi molestias facere enim totam sequi est iure nemo veritatis.
+        Laboriosam asperiores animi deserunt nesciunt nihil natus ut corrupti, ducimus ad doloremque eligendi exercitationem. Totam dignissimos, quia unde odit dolore officiis ad, cupiditate cumque ducimus vel doloremque explicabo iusto in.
+        Optio iste vitae, odit ipsa illum cupiditate obcaecati nisi consequatur soluta voluptatibus aspernatur possimus dolore voluptas fugiat corrupti sed rerum eveniet magni saepe fuga est molestias rem odio maiores? Doloremque?
+        Voluptates aspernatur veritatis veniam quisquam officiis asperiores laboriosam maiores similique reprehenderit debitis magnam a alias doloribus ea adipisci nesciunt optio fugiat possimus perferendis tenetur ducimus, voluptate illum temporibus velit? Magni.
+        Quaerat culpa, iste nulla, neque corrupti adipisci voluptatum accusantium incidunt quam nisi minus commodi, eveniet sit mollitia officia eius autem voluptatibus delectus in reprehenderit hic dolores aspernatur obcaecati! Nam, dolorum?
+        Repellendus cum iste ipsam distinctio deserunt. Accusamus quam placeat aspernatur nulla ut sapiente numquam beatae incidunt odio voluptas voluptatem eum blanditiis quo harum mollitia pariatur vitae quos, nihil perferendis id.</p>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

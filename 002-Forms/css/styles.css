@@ -1,0 +1,69 @@
+/*Default styles*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*
+Relevance:
+  1) Browser styles at the beginning
+  2) .css
+  3) !important
+Specificity:
+  1,0,0,0,0  !important
+  0,1,0,0,0  Inline styles
+  0,0,1,0,0  #ID
+  0,0,0,1,0  Class
+  0,0,0,0,1  Tag
+Combinators:
+  h2 + p -> All p close an h2 adjacent sibling
+  h2 ~ p -> All p close an h2 general sibling
+  h2 > p -> Direct children of h2 and that are p
+  h2 p -> Like > but not only direct, it applies for all children
+*/
+
+/*Custom styles*/
+body {
+  color: rgb(255, 236, 195);
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+section{
+  width: 80%;
+  height: 75%;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 640px;
+  min-height: 400px;
+  background-color: rgb(0, 64, 119);
+}
+label {
+  display: block;
+}
+.main-nav__item a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(167, 223, 255);
+}
+.main-nav__item a:hover {
+  color:aqua;
+  font-size: 1.25rem;
+}
+.main-nav__item a:active {
+  color:rgb(66, 245, 81);
+  font-size: 1.25rem;
+}
+.main-nav__item a:visited {
+  color:rgb(255, 194, 194);
+}
+.main-nav__item a::after {
+  content: "<-";
+}
+.main-nav__item a::before {
+  content: "->";
+}
+.main-nav__item a:hover {
+  color:aqua;
+  font-size: 1.25rem;
+}
