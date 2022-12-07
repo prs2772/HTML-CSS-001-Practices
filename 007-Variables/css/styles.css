@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
 }
+:root{
+  --primary-color: rgb(80, 2, 76);
+  --secondary-color: rgb(255, 236, 195);
+  --primary-height: 15vh;
+}
 /*
 Relevance:
   1) Browser styles at the beginning
@@ -23,27 +28,29 @@ Combinators:
 */
 
 /*Custom styles*/
-body {
-  color: rgb(255, 236, 195);
+html{
+  font-size: 62.5%;
+}
+html{
+  font-size: 1.6rem;
+}
+header{
+  height: var(--primary-height);
   width: 100vw;
-  height: 100vh;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+main {
+  color: var(--secondary-color);
+  width: 100vw;
+  height: 70vh;
   background-color: black;
 }
-.parent{
-  border: 2px white dotted;
-  display: inline-block;
+h1{
+  font-size: 4rem;
 }
-.box{
-  display: inline-block;
-  background-color: rgb(1, 88, 59);
-  width: 8rem;
-  height: 8rem;
-}
-#two{
-  background-color: darkblue;
-  position: absolute;
-}
-#three{
-  position: relative;
-  top: 1.5rem;
+footer{
+  height: var(--primary-height);
+  width: 100vw;
+  background-color: rgb(80, 2, 76);
 }

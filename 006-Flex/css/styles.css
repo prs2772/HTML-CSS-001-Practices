@@ -23,27 +23,53 @@ Combinators:
 */
 
 /*Custom styles*/
+html{
+  font-size: 62.5%;
+}
+html{
+  font-size: 1.6rem;
+}
 body {
   color: rgb(255, 236, 195);
   width: 100vw;
   height: 100vh;
   background-color: black;
 }
-.parent{
-  border: 2px white dotted;
-  display: inline-block;
+.container{
+  border:rgb(255, 236, 195) 0.3rem solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
 }
 .box{
-  display: inline-block;
-  background-color: rgb(1, 88, 59);
-  width: 8rem;
-  height: 8rem;
+  width: 5rem;
+  height: 5rem;
 }
-#two{
+.box1{
+  background-color: steelblue;
+  order: 1
+}
+.box2{
+  background-color: midnightblue;
+  order: 4;
+  flex-basis: 7rem;
+}
+.box3{
+  background-color: rgb(82, 4, 78);
+  order: 6;
+  flex-grow: 2;
+}
+.box4{
   background-color: darkblue;
-  position: absolute;
+  order:2;
 }
-#three{
-  position: relative;
-  top: 1.5rem;
+.box5{
+  background-color: darkgreen;
+  order: 5;
+}
+.box6{
+  background-color: indigo;
+  flex-grow: 1;
 }
