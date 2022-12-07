@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Page that shows you about learnin AI" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First HTML document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hello World!</h1>
+      <nav>
+        <h2>Index</h2>
+        <ol>
+          <li><a href="#article-robots">Robots</a></li>
+          <li><a href="#article-meals">Groceries</a></li>
+          <li><a href="#section-images">Images</a></li>
+          <li><a href="#section-videos">Videos</a></li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <article id="article-robots">
+        <h2>Article about robots</h2>
+        <p>Technolgy of the future</p>
+      </article>
+      <article id="article-meals">
+        <h2>Groceries</h2>
+        <ol>
+          <li>
+            Fruits
+            <ul>
+              <li>Apple</li>
+              <li>Pineapple</li>
+              <li>Cherry</li>
+              <li>Blueberry</li>
+              <li>Strawberry</li>
+              <li>Pumpkin</li>
+              <li>Avocado</li>
+            </ul>
+          </li>
+          <li>
+            Vegetables
+            <ul>
+              <li>Ginger</li>
+              <li>Pumpkin</li>
+              <li>Cucumber</li>
+              <li>Tomato</li>
+              <li>Lettuce</li>
+              <li>Corn</li>
+            </ul>
+          </li>
+          <li>
+            Meats
+            <ul>
+              <li>Read meat</li>
+              <li>Kobe</li>
+              <li>Poultry</li>
+              <li>Lamb</li>
+              <li>Turkey</li>
+              <li>Checken</li>
+            </ul>
+          </li>
+        </ol>
+      </article>
+      <section id="section-images">
+        <h2>Images - Eclipse</h2>
+        <figure>
+          <img src="./resources/images/eclipse-small.jpg" alt="Eclipse image" />
+          <img src="./resources/images/eclipse-medium.jpg" alt="Eclipse image" />
+          <figcaption>Images of an eclipse</figcaption>
+        </figure>
+      </section>
+      <section id="section-videos">
+        <h2>Videos</h2>
+        <video controls preload="auto">
+          <source src="resources/videos/song.mp4#t=3,93" />
+          <source src="resources/videos/song.m4v#t=3,93" />
+        </video>
+      </section>
+    </main>
+    <footer>
+      <p>Footer - Privacy @2022</p>
+    </footer>
+  </body>
+</html>
