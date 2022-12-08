@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Page that shows you about learnin AI" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Responsive images</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Responsive images</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Picture</h2>
+        <picture>
+          <source
+            media="(min-width: 1300px)"
+            srcset="./resources/images/eclipse-big.jpg"
+          />
+          <source
+            media="(min-width: 1000px)"
+            srcset="./resources/images/eclipse-medium.jpg"
+          />
+          <img
+            src="./resources/images/eclipse-small.jpg"
+            alt="Eclipse example image"
+          />
+        </picture>
+      </section>
+    </main>
+  </body>
+</html>

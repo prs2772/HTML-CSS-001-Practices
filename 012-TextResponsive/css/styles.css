@@ -1,0 +1,34 @@
+:root{
+  --min-width: 320px;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 62.5%;
+}
+main{
+  min-width: var(--min-width);
+}
+h1{
+  font-size: 3rem;
+}
+p, label, span{
+  font-size: 1.5rem;
+}
+label{
+  display: block;
+  margin: 1rem 0;
+}
+section{
+  margin: 3rem 0;
+}
+img{
+  width: 100%;
+}
+.container-img {
+  width: calc(100vw*0.8);
+  margin: 3rem auto;
+}
